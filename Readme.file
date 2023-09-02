@@ -1,0 +1,22 @@
+Popup Component::
+
+This React component represents a login and signup popup that includes the following features:
+- Toggle between the login and signup forms.
+- Input fields for full name, email, password, and contact.
+- A "Remember Me" checkbox.
+- A "Forgot Password" link.
+- Error handling for invalid credentials.
+
+## Code Flow
+
+The code for this login and signup popup is structured as follows:
+
+- **State Management**: React state hooks (`useState`) are used to manage the component's state. The component maintains state for whether it's in login or signup mode (`isLogin` and `Issignup`), input values for full name, email, password, and contact, and error messages.
+
+- **Toggle Form**: The `toggleForm` function is responsible for toggling between the login and signup forms. It updates the `isLogin` and `Issignup` states while resetting error messages and input values.
+
+- **Form Submission**: The `handleSubmit` function is invoked when the login or signup form is submitted. Currently, it simulates an error message for invalid credentials. You can replace this logic with actual authentication.
+
+- **HTML Structure**: The HTML structure is defined using JSX, with conditional rendering based on whether the component is in login or signup mode. Labels and input fields are associated correctly.
+
+- **CSS Styling**: Styles for the component are defined in an external CSS file (`Popup.css`). It includes styles for buttons, form elements, labels, and other UI elements. CSS classes are conditionally applied based on the login/signup mode.
